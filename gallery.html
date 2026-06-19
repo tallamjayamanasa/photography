@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the premium portfolio gallery of Elite Vision Photography Academy, including weddings, fashion catalogs, events, drone views, and kids sessions.">
+  <title>Gallery | Elite Vision Photography Academy</title>
+  
+  <link rel="icon" type="image/png" href="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=32&q=80">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="spinner"></div>
+    <div class="spinner-logo">Elite Vision</div>
+    <div class="spinner-subtitle">Photography Academy</div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        ELITE VISION
+        <span>PHOTOGRAPHY ACADEMY</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="academy.html" class="nav-link">Training Academy</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="book.html" class="btn btn-primary btn-small">Book a Session</a>
+      </div>
+
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Subpage Banner Hero -->
+  <section class="banner-hero">
+    <div class="banner-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1920&q=85');"></div>
+    <div class="banner-hero-overlay"></div>
+    <div class="banner-hero-content">
+      <span class="banner-hero-subtitle">Visualizing excellence in every capture</span>
+      <h1 class="banner-hero-title">Our Portfolio</h1>
+    </div>
+  </section>
+
+  <!-- Gallery Grid Portfolio Section -->
+  <section class="section-padding reveal-on-scroll">
+    <div class="container">
+      
+      <!-- Filter Controls -->
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All Portfolio</button>
+        <button class="filter-btn" data-filter="weddings">Weddings</button>
+        <button class="filter-btn" data-filter="portraits">Portraits</button>
+        <button class="filter-btn" data-filter="fashion">Fashion</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="product-shoots">Product Shoots</button>
+        <button class="filter-btn" data-filter="travel">Travel</button>
+        <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+      </div>
+
+      <!-- Masonry Grid (Dynamic inject from gallery.js) -->
+      <div class="gallery-grid">
+        <!-- Rendered items go here -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <!-- About studio -->
+      <div class="footer-col footer-about">
+        <a href="index.html" class="logo">
+          ELITE VISION
+          <span>PHOTOGRAPHY ACADEMY</span>
+        </a>
+        <p>Combining creative storytelling, cutting edge technology, and practical industry mentoring to document your stories and shape tomorrow's visual creators.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com" target="_blank" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://youtube.com" target="_blank" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://pinterest.com" target="_blank" class="footer-social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="academy.html">Training Academy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Specialty Services -->
+      <div class="footer-col">
+        <h3>Studio Services</h3>
+        <ul class="footer-links">
+          <li><a href="services.html">Wedding Coverage</a></li>
+          <li><a href="services.html">Pre-Wedding Shoots</a></li>
+          <li><a href="services.html">Portrait Studio</a></li>
+          <li><a href="services.html">Fashion Campaigns</a></li>
+          <li><a href="services.html">Product Photography</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info & Newsletter -->
+      <div class="footer-col footer-newsletter">
+        <h3>Contact Info</h3>
+        <ul class="footer-contact">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Creative Studio Complex, Jubilee Hills, Hyderabad, India</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 98765 43210</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@elitevisionacademy.com</span>
+          </li>
+        </ul>
+        
+        <div style="margin-top: 30px;">
+          <p style="margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--color-gold);">Academy Newsletter</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Your Email Address" class="form-control" required>
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="container footer-bottom">
+      <div class="copyright">
+        &copy; 2026 Elite Vision Photography Academy. All Rights Reserved.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions (WhatsApp & Back to Top) -->
+  <div class="floating-actions">
+    <button class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+    <button class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
+  </div>
+
+  <!-- Floating Left Enroll Widget -->
+  <div class="academy-sticky-action">
+    <a href="academy.html" class="sticky-cta"><i class="fa-solid fa-graduation-cap"></i> Enroll Now</a>
+    <a href="book.html" class="sticky-cta"><i class="fa-solid fa-calendar-days"></i> Book Session</a>
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

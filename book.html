@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a luxury photography session or register for photography courses at Elite Vision Photography Academy.">
+  <title>Book a Session | Elite Vision Photography Academy</title>
+  
+  <link rel="icon" type="image/png" href="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=32&q=80">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="spinner"></div>
+    <div class="spinner-logo">Elite Vision</div>
+    <div class="spinner-subtitle">Photography Academy</div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        ELITE VISION
+        <span>PHOTOGRAPHY ACADEMY</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="academy.html" class="nav-link">Training Academy</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="book.html" class="btn btn-primary btn-small">Book a Session</a>
+      </div>
+
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Subpage Banner Hero -->
+  <section class="banner-hero">
+    <div class="banner-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=1920&q=85');"></div>
+    <div class="banner-hero-overlay"></div>
+    <div class="banner-hero-content">
+      <span class="banner-hero-subtitle">Reserve your custom schedule</span>
+      <h1 class="banner-hero-title">Bookings & Registration</h1>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="section-padding reveal-on-scroll">
+    <div class="container" style="max-width: 900px;">
+      
+      <!-- Submission Success Card -->
+      <div id="booking-success" class="form-success-container">
+        <div class="success-icon">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h3>Registration Successful!</h3>
+        <p>Thank you! Our studio director will contact you shortly to confirm your booking date, coordinate locations, or finalize your course enrollment details.</p>
+        <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+          <a href="index.html" class="btn btn-primary">Back to Home</a>
+          <a href="gallery.html" class="btn btn-outline">Browse Portfolio</a>
+        </div>
+      </div>
+
+      <!-- Main Booking Form Frame -->
+      <div class="form-card" id="booking-form-wrap">
+        <h2 class="form-title">Scheduling Inquiry</h2>
+        <p class="form-subtitle">Fill in the fields below. Fields marked * are required for validation checking.</p>
+        
+        <form id="booking-form" novalidate>
+          
+          <!-- Row 1: Name & Phone -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="booking-name" class="form-label">Full Name *</label>
+              <input type="text" id="booking-name" placeholder="John Doe" class="form-control" required>
+              <div class="form-error"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="booking-phone" class="form-label">Phone Number *</label>
+              <input type="tel" id="booking-phone" placeholder="+91 98765 43210" class="form-control" required>
+              <div class="form-error"></div>
+            </div>
+          </div>
+
+          <!-- Row 2: Email & Category selection -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="booking-email" class="form-label">Email Address *</label>
+              <input type="email" id="booking-email" placeholder="john@example.com" class="form-control" required>
+              <div class="form-error"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="booking-event" class="form-label">Service or Course category *</label>
+              <select id="booking-event" class="form-control" required>
+                <option value="" disabled selected>Select Service / Academy Program *</option>
+                <optgroup label="Professional Photography Services">
+                  <option value="wedding-photography">Wedding Photography</option>
+                  <option value="pre-wedding-photography">Pre-Wedding Photography</option>
+                  <option value="portrait-photography">Portrait Photography</option>
+                  <option value="event-photography">Event Photography</option>
+                  <option value="fashion-photography">Fashion Photography</option>
+                  <option value="commercial-photography">Commercial Photography</option>
+                  <option value="product-photography">Product Photography</option>
+                  <option value="travel-nature-photography">Travel & Nature Photography</option>
+                </optgroup>
+                <optgroup label="Training Academy Programs">
+                  <option value="beginner">Beginner Course (4 Weeks)</option>
+                  <option value="intermediate">Intermediate Course (8 Weeks)</option>
+                  <option value="professional">Professional Masterclass (12 Weeks)</option>
+                </optgroup>
+              </select>
+              <div class="form-error"></div>
+            </div>
+          </div>
+
+          <!-- Row 3: Date & Time slot -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="booking-date" class="form-label">Preferred Date *</label>
+              <input type="date" id="booking-date" class="form-control" required>
+              <div class="form-error"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="booking-time" class="form-label">Preferred Time Slot *</label>
+              <select id="booking-time" class="form-control" required>
+                <option value="" disabled selected>Select slot *</option>
+                <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                <option value="afternoon">Afternoon (1:00 PM - 4:00 PM)</option>
+                <option value="evening">Evening (4:00 PM - 7:00 PM)</option>
+              </select>
+              <div class="form-error"></div>
+            </div>
+          </div>
+
+          <!-- Row 4: Shoot Location / Classroom & Budget -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="booking-location" class="form-label">Shoot Location / Class Type *</label>
+              <input type="text" id="booking-location" placeholder="e.g. Jubilee Hills Studio, Outdoor, or Online Academy" class="form-control" required>
+              <div class="form-error"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="booking-budget" class="form-label">Estimated Budget Range *</label>
+              <select id="booking-budget" class="form-control" required>
+                <option value="" disabled selected>Select budget range *</option>
+                <option value="basic">Under $500 (Beginner Course / Basic Shoot)</option>
+                <option value="medium">$500 - $1,500 (Intermediate Course / Standard Shoot)</option>
+                <option value="premium">Over $1,500 (Professional Course / Luxury Wedding Shoot)</option>
+              </select>
+              <div class="form-error"></div>
+            </div>
+          </div>
+
+          <!-- Row 5: Message -->
+          <div class="form-group full-width">
+            <label for="booking-details" class="form-label">Additional Session Details or Course Questions</label>
+            <textarea id="booking-details" placeholder="Describe your creative vision, custom outfit themes, background props, or write down any training course questions you have." class="form-control"></textarea>
+          </div>
+
+          <!-- Submit Action -->
+          <div style="text-align: center; margin-top: 20px;">
+            <button type="submit" class="btn btn-primary" style="padding: 18px 50px;">Send Booking Request</button>
+          </div>
+          
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <!-- About studio -->
+      <div class="footer-col footer-about">
+        <a href="index.html" class="logo">
+          ELITE VISION
+          <span>PHOTOGRAPHY ACADEMY</span>
+        </a>
+        <p>Combining creative storytelling, cutting edge technology, and practical industry mentoring to document your stories and shape tomorrow's visual creators.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com" target="_blank" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://youtube.com" target="_blank" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://pinterest.com" target="_blank" class="footer-social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="academy.html">Training Academy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Specialty Services -->
+      <div class="footer-col">
+        <h3>Studio Services</h3>
+        <ul class="footer-links">
+          <li><a href="services.html">Wedding Coverage</a></li>
+          <li><a href="services.html">Pre-Wedding Shoots</a></li>
+          <li><a href="services.html">Portrait Studio</a></li>
+          <li><a href="services.html">Fashion Campaigns</a></li>
+          <li><a href="services.html">Product Photography</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info & Newsletter -->
+      <div class="footer-col footer-newsletter">
+        <h3>Contact Info</h3>
+        <ul class="footer-contact">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Creative Studio Complex, Jubilee Hills, Hyderabad, India</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 98765 43210</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@elitevisionacademy.com</span>
+          </li>
+        </ul>
+        
+        <div style="margin-top: 30px;">
+          <p style="margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--color-gold);">Academy Newsletter</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Your Email Address" class="form-control" required>
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="container footer-bottom">
+      <div class="copyright">
+        &copy; 2026 Elite Vision Photography Academy. All Rights Reserved.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions (WhatsApp & Back to Top) -->
+  <div class="floating-actions">
+    <button class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+    <button class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
+  </div>
+
+  <!-- Floating Left Enroll Widget -->
+  <div class="academy-sticky-action">
+    <a href="academy.html" class="sticky-cta"><i class="fa-solid fa-graduation-cap"></i> Enroll Now</a>
+    <a href="book.html" class="sticky-cta"><i class="fa-solid fa-calendar-days"></i> Book Session</a>
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

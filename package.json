@@ -1,0 +1,12 @@
+{
+  "name": "anti-gravity-photography",
+  "version": "1.0.0",
+  "description": "Premium luxury photography and training studio website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

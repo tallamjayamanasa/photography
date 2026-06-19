@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Elite Vision Photography Academy. We offer premium luxury studio photography services and professional camera/editing training programs in Hyderabad, India.">
+  <meta name="keywords" content="photography academy, luxury photography, wedding photographer, fashion portrait, camera training courses, photography school">
+  <meta name="author" content="Elite Vision Photography Academy">
+  
+  <title>Elite Vision Photography Academy | Premium Services & Training</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=32&q=80">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="spinner"></div>
+    <div class="spinner-logo">Elite Vision</div>
+    <div class="spinner-subtitle">Photography Academy</div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        ELITE VISION
+        <span>PHOTOGRAPHY ACADEMY</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="academy.html" class="nav-link">Training Academy</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="book.html" class="btn btn-primary btn-small">Book a Session</a>
+      </div>
+
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section with Cinematic Video Background -->
+  <section class="hero">
+    <video class="hero-video-bg" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1920&q=85">
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-photographer-taking-photos-at-a-wedding-34446-large.mp4" type="video/mp4">
+    </video>
+    <div class="hero-bg-fallback" style="background-image: url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1920&q=85');"></div>
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <span class="hero-subtitle">World Class Fine Art Photography & Mentorship</span>
+      <h1 class="hero-title">Capturing Moments,<br><span>Creating Memories</span>,<br>Inspiring Future Photographers</h1>
+      <p class="hero-description">Elite Vision Photography Academy specializes in wedding photography, portrait photography, fashion shoots, commercial photography, event coverage, and professional photography training programs designed for beginners and professionals.</p>
+      <div class="hero-btns">
+        <a href="gallery.html" class="btn btn-primary">Explore Gallery</a>
+        <a href="book.html" class="btn btn-outline">Book a Session</a>
+        <a href="academy.html" class="btn btn-gold-outline">Join Academy</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" onclick="document.getElementById('categories').scrollIntoView({behavior: 'smooth'});">
+      <span>Scroll Down</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- Photography Categories Section -->
+  <section id="categories" class="section-padding reveal-on-scroll">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Our Genres</span>
+        <h2 class="section-title">Photography Specialties</h2>
+      </div>
+
+      <div class="categories-grid">
+        <!-- 1. Wedding Photography -->
+        <div class="category-card reveal-on-scroll">
+          <img src="https://i.pinimg.com/736x/15/73/a7/1573a74a29ace1da1634f10f59fdb420.jpg" alt="Wedding Photography" class="category-img" loading="lazy">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <h3 class="category-title">Wedding Photography</h3>
+            <p class="category-description">Candid and traditional coverage documenting your sacred promises in timeless cinematic art frames.</p>
+            <a href="services.html" class="category-btn">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 2. Pre-Wedding Photography -->
+        <div class="category-card reveal-on-scroll delay-100">
+          <img src="https://bhubaneswarweddingphotography.com/wp-content/uploads/2024/03/DDMC16-1024x1024.jpg" alt="Pre-Wedding Photography" class="category-img" loading="lazy">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <h3 class="category-title">Pre-Wedding Photography</h3>
+            <p class="category-description">Artistic couple portrait sessions taken in breathtaking outdoor destinations before your big day.</p>
+            <a href="services.html" class="category-btn">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 3. Portrait Photography -->
+        <div class="category-card reveal-on-scroll delay-200">
+          <img src="https://images.squarespace-cdn.com/content/v1/52540926e4b0d49865bee20d/1473520260750-LO9DJ4REDZYHU25BDX25/London+portrait+photographer" alt="Portrait Photography" class="category-img" loading="lazy">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <h3 class="category-title">Portrait Photography</h3>
+            <p class="category-description">High-end studio and outdoor portraits capturing character, personality, and professional branding.</p>
+            <a href="services.html" class="category-btn">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 4. Fashion Photography -->
+        <div class="category-card reveal-on-scroll">
+          <img src="https://artandcreativity.com/wp-content/uploads/2021/06/fashion-photography-header.jpg" alt="Fashion Photography" class="category-img" loading="lazy">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <h3 class="category-title">Fashion Photography</h3>
+            <p class="category-description">Editorial campaigns, model portfolio sets, and seasonal catalogs with high-contrast styling.</p>
+            <a href="services.html" class="category-btn">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 5. Commercial Photography -->
+        <div class="category-card reveal-on-scroll delay-100">
+          <img src="https://www.photoplanshop.com/cdn/shop/files/iStock-1218614876.jpg?v=1707637776" alt="Commercial Photography" class="category-img" loading="lazy">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <h3 class="category-title">Commercial Photography</h3>
+            <p class="category-description">Corporate workspaces, billboard assets, and architectural images engineered for business promotion.</p>
+            <a href="services.html" class="category-btn">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 6. Product Photography -->
+        <div class="category-card reveal-on-scroll delay-200">
+          <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80" alt="Product Photography" class="category-img" loading="lazy">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <h3 class="category-title">Product Photography</h3>
+            <p class="category-description">High-detail shots focusing on packaging, texture, and reflection for e-commerce listings.</p>
+            <a href="services.html" class="category-btn">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 7. Event Photography -->
+        <div class="category-card reveal-on-scroll">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/070/868/532/small/crowd-silhouette-under-stage-lights-celebrating-event-free-photo.jpg" alt="Event Photography" class="category-img" loading="lazy">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <h3 class="category-title">Event Photography</h3>
+            <p class="category-description">Corporate conferences, live theater, grand concerts, and elite private gatherings captured dynamically.</p>
+            <a href="services.html" class="category-btn">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 8. Travel Photography -->
+        <div class="category-card reveal-on-scroll delay-100">
+          <img src="https://png.pngtree.com/thumb_back/fh260/background/20240310/pngtree-beautiful-maldives-travel-destination-generative-ai-image_15639253.jpg" alt="Travel Photography" class="category-img" loading="lazy">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <h3 class="category-title">Travel Photography</h3>
+            <p class="category-description">Breathtaking landscape frames and cultural documentation capturing the wanderlust of our world.</p>
+            <a href="services.html" class="category-btn">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 9. Wildlife Photography -->
+        <div class="category-card reveal-on-scroll delay-200">
+          <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=600&q=80" alt="Wildlife Photography" class="category-img" loading="lazy">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <h3 class="category-title">Wildlife Photography</h3>
+            <p class="category-description">Close-range portraits of exotic animals and forest ecosystems taken with patience and premium lenses.</p>
+            <a href="services.html" class="category-btn">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Animated Statistics Section -->
+  <section class="section-padding stats-section reveal-on-scroll">
+    <div class="container">
+      <div class="stats-grid">
+        <!-- Stat item 1 -->
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div>
+          <div class="stat-number counter-number" data-target="2000" data-suffix="+">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <!-- Stat item 2 -->
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-images"></i></div>
+          <div class="stat-number counter-number" data-target="10000" data-suffix="+">0</div>
+          <div class="stat-label">Photos Delivered</div>
+        </div>
+        <!-- Stat item 3 -->
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="stat-number counter-number" data-target="15" data-suffix="+">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <!-- Stat item 4 -->
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="stat-number counter-number" data-target="500" data-suffix="+">0</div>
+          <div class="stat-label">Students Trained</div>
+        </div>
+        <!-- Stat item 5 -->
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-camera-retro"></i></div>
+          <div class="stat-number counter-number" data-target="100" data-suffix="+">0</div>
+          <div class="stat-label">Events Covered</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding testimonials-section reveal-on-scroll">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Accolades & Stories</span>
+        <h2 class="section-title">Reviews from Clients & Students</h2>
+      </div>
+
+      <div class="testimonials-carousel-container">
+        <!-- Prev Arrow -->
+        <button class="testimonial-nav testimonial-nav-prev" aria-label="Previous review">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <!-- Slides Track -->
+        <div class="testimonial-track">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"Elite Vision captured our wedding with absolute poetry. The lighting, composition, and their professional demeanor on our special day was stellar. The wedding album feels like a luxury catalog!"</p>
+            <h4 class="testimonial-author">Sarah & David Malhotra</h4>
+            <span class="testimonial-role">Wedding Service Client</span>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"Enrolling in their Professional Course completely changed my career path. The live studio practice, outdoor shoots, and client coordination advice gave me the confidence to launch my own business."</p>
+            <h4 class="testimonial-author">Arjun Sharma</h4>
+            <span class="testimonial-role">Academy Graduate (2025)</span>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"The e-commerce product photos they delivered helped increase our click-through rates by 40%. Their attention to detailing, glass reflections, and shadow grading was outstanding."</p>
+            <h4 class="testimonial-author">Rhea Sen</h4>
+            <span class="testimonial-role">E-commerce Brand Manager</span>
+          </div>
+        </div>
+
+        <!-- Next Arrow -->
+        <button class="testimonial-nav testimonial-nav-next" aria-label="Next review">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Pagination Indicators -->
+        <div class="testimonial-indicators"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section reveal-on-scroll" style="background-image: url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1920&q=80'); position: relative; padding: 120px 0; background-size: cover; background-position: center; border-top: var(--border-glass);">
+    <div class="hero-overlay" style="background: rgba(7, 7, 7, 0.88);"></div>
+    <div class="container" style="position: relative; z-index: 2; text-align: center;">
+      <h2 style="font-size: 2.8rem; margin-bottom: 20px;">Ready to Capture Your Moments or Master the Camera?</h2>
+      <p style="color: var(--color-text-secondary); max-width: 700px; margin: 0 auto 40px auto; font-size: 1.05rem;">Whether you are looking to reserve an artistic studio session for your brand, document a beautiful life milestone, or learn the technical nuances of photography, we have customizable packages designed for you.</p>
+      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+        <a href="book.html" class="btn btn-primary">Book a Session</a>
+        <a href="academy.html" class="btn btn-outline">Join the Academy</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <!-- About studio -->
+      <div class="footer-col footer-about">
+        <a href="index.html" class="logo">
+          ELITE VISION
+          <span>PHOTOGRAPHY ACADEMY</span>
+        </a>
+        <p>Combining creative storytelling, cutting edge technology, and practical industry mentoring to document your stories and shape tomorrow's visual creators.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com" target="_blank" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://youtube.com" target="_blank" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://pinterest.com" target="_blank" class="footer-social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="academy.html">Training Academy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Specialty Services -->
+      <div class="footer-col">
+        <h3>Studio Services</h3>
+        <ul class="footer-links">
+          <li><a href="services.html">Wedding Coverage</a></li>
+          <li><a href="services.html">Pre-Wedding Shoots</a></li>
+          <li><a href="services.html">Portrait Studio</a></li>
+          <li><a href="services.html">Fashion Campaigns</a></li>
+          <li><a href="services.html">Product Photography</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info & Newsletter -->
+      <div class="footer-col footer-newsletter">
+        <h3>Contact Info</h3>
+        <ul class="footer-contact">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Creative Studio Complex, Jubilee Hills, Hyderabad, India</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 98765 43210</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@elitevisionacademy.com</span>
+          </li>
+        </ul>
+        
+        <div style="margin-top: 30px;">
+          <p style="margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--color-gold);">Academy Newsletter</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Your Email Address" class="form-control" required>
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="container footer-bottom">
+      <div class="copyright">
+        &copy; 2026 Elite Vision Photography Academy. All Rights Reserved.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions (WhatsApp & Back to Top) -->
+  <div class="floating-actions">
+    <button class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+    <button class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
+  </div>
+
+  <!-- Floating Left Enroll Widget -->
+  <div class="academy-sticky-action">
+    <a href="academy.html" class="sticky-cta"><i class="fa-solid fa-graduation-cap"></i> Enroll Now</a>
+    <a href="book.html" class="sticky-cta"><i class="fa-solid fa-calendar-days"></i> Book Session</a>
+  </div>
+
+  <!-- Shared Javascript main loader -->
+  <script src="js/main.js"></script>
+</body>
+</html>

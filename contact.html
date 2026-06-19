@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Elite Vision Photography Academy. Fill out our contact inquiry form, find our studio location in Jubilee Hills, Hyderabad, or call us.">
+  <title>Contact | Elite Vision Photography Academy</title>
+  
+  <link rel="icon" type="image/png" href="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=32&q=80">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="spinner"></div>
+    <div class="spinner-logo">Elite Vision</div>
+    <div class="spinner-subtitle">Photography Academy</div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        ELITE VISION
+        <span>PHOTOGRAPHY ACADEMY</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="academy.html" class="nav-link">Training Academy</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="book.html" class="btn btn-primary btn-small">Book a Session</a>
+      </div>
+
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Subpage Banner Hero -->
+  <section class="banner-hero">
+    <div class="banner-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1920&q=85');"></div>
+    <div class="banner-hero-overlay"></div>
+    <div class="banner-hero-content">
+      <span class="banner-hero-subtitle">Let's discuss your creative goals</span>
+      <h1 class="banner-hero-title">Contact Us</h1>
+    </div>
+  </section>
+
+  <!-- Contact Grid Section -->
+  <section class="section-padding reveal-on-scroll">
+    <div class="container">
+      <div class="contact-layout-grid">
+        
+        <!-- Column 1: Contact Details -->
+        <div class="contact-info-panel reveal-on-scroll">
+          
+          <!-- Card 1: Address -->
+          <div class="contact-info-card reveal-on-scroll">
+            <div class="contact-icon-wrap">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-info-content">
+              <h4>Studio Address</h4>
+              <p>Elite Vision Photography Academy<br>Creative Studio Complex, Jubilee Hills<br>Hyderabad, Telangana - 500033</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Call Us -->
+          <div class="contact-info-card reveal-on-scroll delay-100">
+            <div class="contact-icon-wrap">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-info-content">
+              <h4>Call Studio</h4>
+              <p>Mobile: +91 9866818277<br>Office Hours: 9:00 AM - 7:00 PM</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Email Inquiries -->
+          <div class="contact-info-card reveal-on-scroll delay-200">
+            <div class="contact-icon-wrap">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-info-content">
+              <h4>Email Inquiries</h4>
+              <p>info@elitevisionacademy.com<br>admissions@elitevisionacademy.com</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Working Hours -->
+          <div class="contact-info-card reveal-on-scroll">
+            <div class="contact-icon-wrap">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="contact-info-content">
+              <h4>Working Hours</h4>
+              <p>Monday – Saturday<br>9:00 AM – 7:00 PM (Sunday Closed)</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Column 2: Inquiry Form -->
+        <div class="reveal-on-scroll">
+          
+          <!-- Success Screen -->
+          <div id="contact-success" class="form-success-container" style="background-color: var(--color-bg-secondary); border: var(--border-glass);">
+            <div class="success-icon">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <h3>Inquiry Sent!</h3>
+            <p>Thank you! Your message has been received successfully. A consultant from our Jubilee Hills campus will email or call you within 24 hours.</p>
+            <a href="index.html" class="btn btn-primary btn-small">Back to Home</a>
+          </div>
+
+          <!-- Inquiry Form Frame -->
+          <div class="form-card" id="contact-form-wrap">
+            <h2 class="form-title">Send a Message</h2>
+            <p class="form-subtitle">Have questions about courses or studio booking rates? Fill out this quick card.</p>
+            
+            <form id="contact-form" novalidate>
+              <!-- Name & Email -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Full Name *</label>
+                  <input type="text" id="contact-name" placeholder="John Doe" class="form-control" required>
+                  <div class="form-error"></div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Address *</label>
+                  <input type="email" id="contact-email" placeholder="john@example.com" class="form-control" required>
+                  <div class="form-error"></div>
+                </div>
+              </div>
+
+              <!-- Phone & Date -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-phone" class="form-label">Phone Number *</label>
+                  <input type="tel" id="contact-phone" placeholder="+91 9866818277" class="form-control" required>
+                  <div class="form-error"></div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="contact-date" class="form-label">Preferred Date *</label>
+                  <input type="date" id="contact-date" class="form-control" required>
+                  <div class="form-error"></div>
+                </div>
+              </div>
+
+              <!-- Service & Course Selectors -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-service" class="form-label">Service Required</label>
+                  <select id="contact-service" class="form-control" required>
+                    <option value="none">None - Academy Inquiry only</option>
+                    <option value="wedding">Wedding Photography</option>
+                    <option value="prewedding">Pre-Wedding Photography</option>
+                    <option value="portrait">Portrait Photography</option>
+                    <option value="event">Event Photography</option>
+                    <option value="fashion">Fashion Photography</option>
+                    <option value="commercial">Commercial Photography</option>
+                    <option value="product">Product Photography</option>
+                    <option value="travel">Travel & Nature Photography</option>
+                  </select>
+                  <div class="form-error"></div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="contact-course" class="form-label">Course Interested In</label>
+                  <select id="contact-course" class="form-control" required>
+                    <option value="none">None - Photography Service only</option>
+                    <option value="beginner">Beginner Course (4 Weeks)</option>
+                    <option value="intermediate">Intermediate Course (8 Weeks)</option>
+                    <option value="professional">Professional Masterclass (12 Weeks)</option>
+                  </select>
+                  <div class="form-error"></div>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Inquiry Message *</label>
+                <textarea id="contact-message" placeholder="Type your questions or specify photoshoot details here..." class="form-control" required></textarea>
+                <div class="form-error"></div>
+              </div>
+
+              <!-- Submit -->
+              <div style="text-align: center;">
+                <button type="submit" class="btn btn-primary" style="padding: 18px 45px; width: 100%;">Send Inquiry</button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Google Maps Frame Section -->
+  <section class="map-section reveal-on-scroll">
+    <iframe class="map-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.0392350811566!2d78.40698507597541!3d17.433878001712952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9135fc8e19bb%3A0x1bb19fc13c32b55f!2sJubilee%20Hills%2C%20Hyderabad%2C%20Telangana%20500033!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- Glowing Brand Social Media Row Section -->
+  <section class="section-padding reveal-on-scroll" style="background-color: var(--color-bg-primary); text-align: center;">
+    <div class="container">
+      <h3 style="font-size: 1.6rem; margin-bottom: 10px;">Connect on Social Media</h3>
+      <p style="color: var(--color-text-secondary); margin-bottom: 40px; font-size: 0.9rem;">Follow us for daily photography tips, student spotlights, and behind-the-scenes video shoots.</p>
+      
+      <div class="social-glow-row">
+        <a href="https://instagram.com" target="_blank" class="social-glow-btn instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank" class="social-glow-btn facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://youtube.com" target="_blank" class="social-glow-btn youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="social-glow-btn linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://pinterest.com" target="_blank" class="social-glow-btn pinterest" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <!-- About studio -->
+      <div class="footer-col footer-about">
+        <a href="index.html" class="logo">
+          ELITE VISION
+          <span>PHOTOGRAPHY ACADEMY</span>
+        </a>
+        <p>Combining creative storytelling, cutting edge technology, and practical industry mentoring to document your stories and shape tomorrow's visual creators.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com" target="_blank" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://youtube.com" target="_blank" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://pinterest.com" target="_blank" class="footer-social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="academy.html">Training Academy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Specialty Services -->
+      <div class="footer-col">
+        <h3>Studio Services</h3>
+        <ul class="footer-links">
+          <li><a href="services.html">Wedding Coverage</a></li>
+          <li><a href="services.html">Pre-Wedding Shoots</a></li>
+          <li><a href="services.html">Portrait Studio</a></li>
+          <li><a href="services.html">Fashion Campaigns</a></li>
+          <li><a href="services.html">Product Photography</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info & Newsletter -->
+      <div class="footer-col footer-newsletter">
+        <h3>Contact Info</h3>
+        <ul class="footer-contact">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Creative Studio Complex, Jubilee Hills, Hyderabad, India</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 9866818277</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@elitevisionacademy.com</span>
+          </li>
+        </ul>
+        
+        <div style="margin-top: 30px;">
+          <p style="margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--color-gold);">Academy Newsletter</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Your Email Address" class="form-control" required>
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="container footer-bottom">
+      <div class="copyright">
+        &copy; 2026 Elite Vision Photography Academy. All Rights Reserved.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions (WhatsApp & Back to Top) -->
+  <div class="floating-actions">
+    <button class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+    <button class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
+  </div>
+
+  <!-- Floating Left Enroll Widget -->
+  <div class="academy-sticky-action">
+    <a href="academy.html" class="sticky-cta"><i class="fa-solid fa-graduation-cap"></i> Enroll Now</a>
+    <a href="book.html" class="sticky-cta"><i class="fa-solid fa-calendar-days"></i> Book Session</a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

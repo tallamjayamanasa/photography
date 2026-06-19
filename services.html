@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore professional photography services by Elite Vision Photography Academy, including wedding, portrait, fashion campaigns, events, and commercial product shoots.">
+  <title>Services | Elite Vision Photography Academy</title>
+  
+  <link rel="icon" type="image/png" href="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=32&q=80">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* Service modal details styles */
+    .services-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(7, 7, 7, 0.96);
+      z-index: 99999;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: var(--transition-smooth);
+    }
+    .services-modal.active {
+      display: flex;
+      opacity: 1;
+    }
+    .services-modal-content {
+      background-color: var(--color-bg-secondary);
+      border: var(--border-gold-glass);
+      width: 90%;
+      max-width: 650px;
+      padding: 40px;
+      position: relative;
+      box-shadow: var(--shadow-dark);
+      animation: scaleUp 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .services-modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 2.2rem;
+      color: var(--color-white);
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      transition: var(--transition-fast);
+      line-height: 1;
+    }
+    .services-modal-close:hover {
+      color: var(--color-gold);
+    }
+    .services-modal-title {
+      font-size: 2rem;
+      color: var(--color-gold);
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: 10px;
+    }
+    .services-modal-body {
+      color: var(--color-text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+    .services-modal-body ul {
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+    .services-modal-body li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 25px;
+    }
+    .services-modal-body li::before {
+      content: '\f058';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: var(--color-gold);
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="spinner"></div>
+    <div class="spinner-logo">Elite Vision</div>
+    <div class="spinner-subtitle">Photography Academy</div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        ELITE VISION
+        <span>PHOTOGRAPHY ACADEMY</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="academy.html" class="nav-link">Training Academy</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="book.html" class="btn btn-primary btn-small">Book a Session</a>
+      </div>
+
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Subpage Banner Hero -->
+  <section class="banner-hero">
+    <div class="banner-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1920&q=85');"></div>
+    <div class="banner-hero-overlay"></div>
+    <div class="banner-hero-content">
+      <span class="banner-hero-subtitle">Creating unforgettable visual stories</span>
+      <h1 class="banner-hero-title">Studio Services</h1>
+    </div>
+  </section>
+
+  <!-- Services Grid Section -->
+  <section class="section-padding reveal-on-scroll">
+    <div class="container">
+      <div class="services-grid">
+        
+        <!-- Service 1: Wedding Photography -->
+        <div class="service-card reveal-on-scroll">
+          <div class="service-img-wrap">
+            <img src="https://i0.wp.com/paperboatweddingphotography.com/wp-content/uploads/2024/10/RPB07605Mh01.jpg?fit=1200%2C800&ssl=1" alt="Wedding Photography" class="service-img" loading="lazy">
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-info">
+            <h3>Wedding Photography</h3>
+            <p>Capture every emotional moment of your special day with artistic storytelling.</p>
+            <div class="service-actions">
+              <a href="book.html?service=wedding-photography" class="btn btn-primary btn-small">Book Now</a>
+              <button class="btn btn-gold-outline btn-small details-trigger" data-service="wedding">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Pre-Wedding Photography -->
+        <div class="service-card reveal-on-scroll delay-100">
+          <div class="service-img-wrap">
+            <img src="https://josephkingphotography.in/wp-content/uploads/2022/08/Joseph-King-Photography-Pre-Wedding-Photography-Indore-15.jpg" alt="Pre-Wedding Shoots" class="service-img" loading="lazy">
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-info">
+            <h3>Pre-Wedding Photography</h3>
+            <p>Creative destination and themed couple shoots.</p>
+            <div class="service-actions">
+              <a href="book.html?service=pre-wedding-photography" class="btn btn-primary btn-small">Book Now</a>
+              <button class="btn btn-gold-outline btn-small details-trigger" data-service="prewedding">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Portrait Photography -->
+        <div class="service-card reveal-on-scroll delay-200">
+          <div class="service-img-wrap">
+            <img src="https://cdn.pixabay.com/photo/2021/02/03/09/44/portrait-5977311_1280.jpg" alt="Portrait Studio" class="service-img" loading="lazy">
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-info">
+            <h3>Portrait Photography</h3>
+            <p>Professional portraits for individuals, families, and personal branding.</p>
+            <div class="service-actions">
+              <a href="book.html?service=portrait-photography" class="btn btn-primary btn-small">Book Now</a>
+              <button class="btn btn-gold-outline btn-small details-trigger" data-service="portrait">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4: Event Photography -->
+        <div class="service-card reveal-on-scroll">
+          <div class="service-img-wrap">
+            <img src="https://tiimg.tistatic.com/fp/1/008/164/event-photography-services-698.jpg" alt="Event Coverage" class="service-img" loading="lazy">
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-info">
+            <h3>Event Photography</h3>
+            <p>Corporate events, birthdays, celebrations, and social gatherings.</p>
+            <div class="service-actions">
+              <a href="book.html?service=event-photography" class="btn btn-primary btn-small">Book Now</a>
+              <button class="btn btn-gold-outline btn-small details-trigger" data-service="event">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5: Fashion Photography -->
+        <div class="service-card reveal-on-scroll delay-100">
+          <div class="service-img-wrap">
+            <img src="https://media.istockphoto.com/id/1399426271/photo/stylish-young-mixed-race-female-posing-in-trendy-pink-clothes-sitting-on-a-chair-and-making-a.jpg?s=612x612&w=0&k=20&c=5BpbN9LQjeSpbcLxXM4pPl_BWCWaL_6OboR9MrZNusI=" alt="Fashion Portfolio" class="service-img" loading="lazy">
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-info">
+            <h3>Fashion Photography</h3>
+            <p>Premium fashion and model portfolio photography.</p>
+            <div class="service-actions">
+              <a href="book.html?service=fashion-photography" class="btn btn-primary btn-small">Book Now</a>
+              <button class="btn btn-gold-outline btn-small details-trigger" data-service="fashion">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6: Commercial Photography -->
+        <div class="service-card reveal-on-scroll delay-200">
+          <div class="service-img-wrap">
+            <img src="https://shotkit.com/wp-content/uploads/2020/10/commercial-photography-003.jpg" alt="Commercial Campaign" class="service-img" loading="lazy">
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-info">
+            <h3>Commercial Photography</h3>
+            <p>Photography solutions for brands and businesses.</p>
+            <div class="service-actions">
+              <a href="book.html?service=commercial-photography" class="btn btn-primary btn-small">Book Now</a>
+              <button class="btn btn-gold-outline btn-small details-trigger" data-service="commercial">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 7: Product Photography -->
+        <div class="service-card reveal-on-scroll">
+          <div class="service-img-wrap">
+            <img src="https://images.squarespace-cdn.com/content/v1/5a1fac7e914e6b30d737146f/1683652897432-UKUTT07XCKS9NI9NLOXT/228A4750a.jpg" alt="Product Photography" class="service-img" loading="lazy">
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-info">
+            <h3>Product Photography</h3>
+            <p>High-quality product images for e-commerce and advertising.</p>
+            <div class="service-actions">
+              <a href="book.html?service=product-photography" class="btn btn-primary btn-small">Book Now</a>
+              <button class="btn btn-gold-outline btn-small details-trigger" data-service="product">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 8: Travel & Nature Photography -->
+        <div class="service-card reveal-on-scroll delay-100">
+          <div class="service-img-wrap">
+            <img src="https://m.media-amazon.com/images/I/91IJsOs54GL._AC_UF894,1000_QL80_.jpg" alt="Travel & Nature" class="service-img" loading="lazy">
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-info">
+            <h3>Travel & Nature Photography</h3>
+            <p>Beautiful landscape and travel photography services.</p>
+            <div class="service-actions">
+              <a href="book.html?service=travel-nature-photography" class="btn btn-primary btn-small">Book Now</a>
+              <button class="btn btn-gold-outline btn-small details-trigger" data-service="travel">Details</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Details Modals Portal -->
+  <div id="service-modal" class="services-modal">
+    <div class="services-modal-content">
+      <button class="services-modal-close" id="modal-close">&times;</button>
+      <h3 class="services-modal-title" id="modal-title">Service Details</h3>
+      <div class="services-modal-body" id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <!-- About studio -->
+      <div class="footer-col footer-about">
+        <a href="index.html" class="logo">
+          ELITE VISION
+          <span>PHOTOGRAPHY ACADEMY</span>
+        </a>
+        <p>Combining creative storytelling, cutting edge technology, and practical industry mentoring to document your stories and shape tomorrow's visual creators.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com" target="_blank" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://youtube.com" target="_blank" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://pinterest.com" target="_blank" class="footer-social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="academy.html">Training Academy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Specialty Services -->
+      <div class="footer-col">
+        <h3>Studio Services</h3>
+        <ul class="footer-links">
+          <li><a href="services.html">Wedding Coverage</a></li>
+          <li><a href="services.html">Pre-Wedding Shoots</a></li>
+          <li><a href="services.html">Portrait Studio</a></li>
+          <li><a href="services.html">Fashion Campaigns</a></li>
+          <li><a href="services.html">Product Photography</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info & Newsletter -->
+      <div class="footer-col footer-newsletter">
+        <h3>Contact Info</h3>
+        <ul class="footer-contact">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Creative Studio Complex, Jubilee Hills, Hyderabad, India</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 98765 43210</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@elitevisionacademy.com</span>
+          </li>
+        </ul>
+        
+        <div style="margin-top: 30px;">
+          <p style="margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--color-gold);">Academy Newsletter</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Your Email Address" class="form-control" required>
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="container footer-bottom">
+      <div class="copyright">
+        &copy; 2026 Elite Vision Photography Academy. All Rights Reserved.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions (WhatsApp & Back to Top) -->
+  <div class="floating-actions">
+    <button class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+    <button class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
+  </div>
+
+  <!-- Floating Left Enroll Widget -->
+  <div class="academy-sticky-action">
+    <a href="academy.html" class="sticky-cta"><i class="fa-solid fa-graduation-cap"></i> Enroll Now</a>
+    <a href="book.html" class="sticky-cta"><i class="fa-solid fa-calendar-days"></i> Book Session</a>
+  </div>
+
+  <script src="js/main.js"></script>
+  
+  <!-- Interactive Modal Script Details -->
+  <script>
+    const modalData = {
+      wedding: {
+        title: "Wedding Photography",
+        body: `
+          <p>Capture the essence of your love story with our luxury wedding photography program. We blend photojournalistic storytelling with elegant portrait lighting to document your emotions.</p>
+          <ul>
+            <li>Two principal photographers (Candid + Traditional focus)</li>
+            <li>Complementary engagement mini-shoot in our luxury studio</li>
+            <li>Custom leather-bound coffee table album (100 pages)</li>
+            <li>High-resolution digital gallery online within 4 weeks</li>
+            <li>Full coverage of pre-wedding ceremonies and cocktail events</li>
+          </ul>
+          <a href="book.html?service=wedding-photography" class="btn btn-primary btn-small" style="margin-top:15px; display:inline-block;">Reserve Wedding Schedule</a>
+        `
+      },
+      prewedding: {
+        title: "Pre-Wedding Photography",
+        body: `
+          <p>Tell your unique bond before the grand ceremony through customized, themed, and destination portrait sessions matching your personality.</p>
+          <ul>
+            <li>Pre-shoot consulting on locations, timelines, and concepts</li>
+            <li>8 hours of photography coverage across two scenic outdoor locations</li>
+            <li>Styling consultation and assistance with custom gown draping</li>
+            <li>Cinematic mini teaser slideshow set to licensed music</li>
+            <li>40 color-graded fine art couple images ready for print</li>
+          </ul>
+          <a href="book.html?service=pre-wedding-photography" class="btn btn-primary btn-small" style="margin-top:15px; display:inline-block;">Reserve Couple Session</a>
+        `
+      },
+      portrait: {
+        title: "Portrait Photography",
+        body: `
+          <p>Professional headshots and lifestyle portraits tailored for personal branding, resumes, models, and family legacy portfolios.</p>
+          <ul>
+            <li>Indoor studio session with customizable background sweeps</li>
+            <li>Guided poses matching your professional or creative intent</li>
+            <li>Real-time image preview and instant select feedback</li>
+            <li>Expert retouching (skin smoothing, light balancing, blemish fixes)</li>
+            <li>Delivery of corporate print-ready headshots and digital versions</li>
+          </ul>
+          <a href="book.html?service=portrait-photography" class="btn btn-primary btn-small" style="margin-top:15px; display:inline-block;">Reserve Portrait Session</a>
+        `
+      },
+      event: {
+        title: "Event Photography",
+        body: `
+          <p>Elegantly document corporate annual reviews, galas, birthdays, anniversaries, or private concerts with active visual capture.</p>
+          <ul>
+            <li>Dynamic event coverage with minimal disturbance to guests</li>
+            <li>Low-light lens optimization for dark ballrooms and stage settings</li>
+            <li>Real-time key image handoff (optional for live social posts)</li>
+            <li>Complete documentation of stages, crowds, decorations, and speakers</li>
+            <li>Fully indexed web link directory for guest photo downloads</li>
+          </ul>
+          <a href="book.html?service=event-photography" class="btn btn-primary btn-small" style="margin-top:15px; display:inline-block;">Book Event Coverage</a>
+        `
+      },
+      fashion: {
+        title: "Fashion Photography",
+        body: `
+          <p>High-end editorial campaigns, model portfolios, lookbooks, and brand catalog campaigns matching agency layouts.</p>
+          <ul>
+            <li>Full concept planning and moodboard development</li>
+            <li>Pro studio setup with multi-strobe grids, umbrellas, and wind effects</li>
+            <li>Coordination with regional makeup artists and hair stylists</li>
+            <li>Advanced editorial beauty retouching and color grading</li>
+            <li>Commercial use authorization license included in packages</li>
+          </ul>
+          <a href="book.html?service=fashion-photography" class="btn btn-primary btn-small" style="margin-top:15px; display:inline-block;">Book Fashion Shoot</a>
+        `
+      },
+      commercial: {
+        title: "Commercial Photography",
+        body: `
+          <p>Premium photography solutions for corporate workspaces, architecture, industrial facilities, and brand campaigns.</p>
+          <ul>
+            <li>Architectural wide-angle photography with perspective control</li>
+            <li>HDR interior setups featuring corporate branding and environments</li>
+            <li>Corporate workspace activity and group team portraits</li>
+            <li>Industrial machinery and safety processes covered meticulously</li>
+            <li>High-resolution digital delivery with commercial licensing</li>
+          </ul>
+          <a href="book.html?service=commercial-photography" class="btn btn-primary btn-small" style="margin-top:15px; display:inline-block;">Book Corporate Commercial</a>
+        `
+      },
+      product: {
+        title: "Product Photography",
+        body: `
+          <p>Clean, high-detail product images tailored for advertising, catalogues, and e-commerce platforms like Amazon.</p>
+          <ul>
+            <li>Sleek studio reflection control for glass, metals, and packaging</li>
+            <li>Pure white background cutout images with transparent shadows (PNG)</li>
+            <li>Creative lifestyle settings incorporating textured ingredients</li>
+            <li>Macro lenses used to capture minute serial codes and product textures</li>
+            <li>Pre-scaled digital images optimized for quick catalog loading</li>
+          </ul>
+          <a href="book.html?service=product-photography" class="btn btn-primary btn-small" style="margin-top:15px; display:inline-block;">Book Product Session</a>
+        `
+      },
+      travel: {
+        title: "Travel & Nature Photography",
+        body: `
+          <p>Visual exploration services for hotel properties, tourism offices, editorial travel articles, and nature preserves.</p>
+          <ul>
+            <li>Dynamic landscape, resort interior, and scenic exterior coverage</li>
+            <li>Natural light optimizations for dawn, golden hour, and dusk</li>
+            <li>Drone aerial photography licenses (local permit regulations apply)</li>
+            <li>Scenic prints licensing for hotels, offices, and interior design</li>
+            <li>High-end grading emphasizing natural greens, blues, and earth tones</li>
+          </ul>
+          <a href="book.html?service=travel-nature-photography" class="btn btn-primary btn-small" style="margin-top:15px; display:inline-block;">Book Travel Commission</a>
+        `
+      }
+    };
+
+    const modal = document.getElementById('service-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalBody = document.getElementById('modal-body');
+    const modalClose = document.getElementById('modal-close');
+    const triggers = document.querySelectorAll('.details-trigger');
+
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const key = trigger.getAttribute('data-service');
+        const data = modalData[key];
+        
+        if (data) {
+          modalTitle.innerText = data.title;
+          modalBody.innerHTML = data.body;
+          modal.style.display = 'flex';
+          setTimeout(() => {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          }, 10);
+        }
+      });
+    });
+
+    const closeModal = () => {
+      modal.classList.remove('active');
+      setTimeout(() => {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+      }, 400);
+    };
+
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+    });
+  </script>
+</body>
+</html>
